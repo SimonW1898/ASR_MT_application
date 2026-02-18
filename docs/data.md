@@ -28,6 +28,8 @@ Important for using Data is that the licensing terms of the data are compatible 
 - Source audio + transcript: Mozilla Common Voice [Manual Download](https://commonvoice.mozilla.org/en/datasets) (need to register for access) (License: CC0-1.0)
 - Target translation text: [Hugging Face](https://huggingface.co/datasets/google/cvss) `google/cvss` (Older CoVosT version but contains target translations, which is missing for Mozilla Common Voice. License: CC BY 4.0)
 
+For a consolidated source/license overview of both models and datasets, see [Model/Data Licensing](model_data_licensing.md).
+
 Matching key:
 
 - Common Voice TSV: `Path(path).stem`

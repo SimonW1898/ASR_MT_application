@@ -29,4 +29,5 @@ Reusable modular pipeline components:
 - `core`: shared types/config/cache utilities
 - `preprocess.py`, `realtime.py`, and sink/source abstractions
 
+[Next: Architecture](architecture.md)
 [Back to Docs Index](index.md)

@@ -63,7 +63,7 @@ ffmpeg -list_devices true -f dshow -i dummy
 
 - Ensure `runtime.offline: true` in `../grpc_demo/configs/demo.yaml` for strict offline runs.
 
-## Whisper hallucinations / repeated filler text
+<!-- ## Whisper hallucinations / repeated filler text
 
 Symptoms:
 
@@ -80,6 +80,7 @@ Mitigations (recommended order):
 4. Keep `merge.enabled: false` while diagnosing repetition.
 5. Test with a larger Whisper model when available.
 
-If quality is still poor in microphone mode, capture a short WAV sample and reproduce with file mode to separate microphone/noise issues from model issues.
+If quality is still poor in microphone mode, capture a short WAV sample and reproduce with file mode to separate microphone/noise issues from model issues. -->
 
+[Next: Portability Roadmap](portability.md)
 [Back to Docs Index](index.md)
