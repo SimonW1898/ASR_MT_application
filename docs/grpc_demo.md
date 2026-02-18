@@ -18,7 +18,7 @@ The main operational guide is in the repository root:
 - `client/` — GUI and client-side streaming
 - `server/` — gRPC service and processing pipeline
 
-## Documentation policy
+<!-- ## Documentation policy
 
 Keep detailed setup/run/config docs in `docs/` to avoid drift.
 
@@ -27,7 +27,7 @@ Keep detailed setup/run/config docs in `docs/` to avoid drift.
 	- [Runtime Guide](runtime.md)
 	- [Configuration](configuration.md)
 	- [Scripts Guide](scripts.md)
-	- [Troubleshooting](troubleshooting.md)
+	- [Troubleshooting](troubleshooting.md) -->
 
 ## Recent behavior updates
 
@@ -61,6 +61,13 @@ Per test session:
 
 Minimum pair coverage:
 
+For live microphone:
+- `en -> de`
+- `de -> en`
+- `de -> fr`
+
+For WAV files:
+- `en -> de` 
 - `ar -> en`
 - `fa -> en`
 - `ja -> en`

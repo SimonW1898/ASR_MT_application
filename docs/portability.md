@@ -48,10 +48,10 @@ Focus:
 
 Acceptance:
 
-- teammate can move from clone to runnable demo with minimal manual steps
+- can move from clone to runnable demo with minimal manual steps
 
 ### Phase D — Optional server container path
-
+This is only collection of ideas for future but not the focus of current work.
 Focus:
 
 - server-only Docker path

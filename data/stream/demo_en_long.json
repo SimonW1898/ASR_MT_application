@@ -1,0 +1,190 @@
+{
+  "schema": "long_stream_v1",
+  "sr": 16000,
+  "dtype": "float32",
+  "seed": 42,
+  "target_duration_s": 60.0,
+  "min_gap_s": 0.1,
+  "max_gap_s": 0.6,
+  "actual_duration_s": 64.90175,
+  "num_segments": 17,
+  "num_utt_segments": 9,
+  "num_silence_segments": 8,
+  "input_files_dir_id": "3a52ce780950d4d969792a2559cd519d7ee8c727",
+  "segments": [
+    {
+      "kind": "utt",
+      "stream_start_sample": 0,
+      "stream_end_sample": 86400,
+      "stream_start_s": 0.0,
+      "stream_end_s": 5.4,
+      "duration_s": 5.4,
+      "src_wav": "C:\\Users\\Simon.Wenchel\\Code\\buffering\\data\\raw\\covost2_en_de\\audio_wav16k\\common_voice_en_18659515.wav",
+      "src_wav_name": "common_voice_en_18659515.wav",
+      "src_ref": "That's what he and I agreed.",
+      "tgt_ref": "Das hatten er und ich vereinbart."
+    },
+    {
+      "kind": "silence",
+      "stream_start_sample": 86400,
+      "stream_end_sample": 90065,
+      "stream_start_s": 5.4,
+      "stream_end_s": 5.6290625,
+      "duration_s": 0.2290625
+    },
+    {
+      "kind": "utt",
+      "stream_start_sample": 90065,
+      "stream_end_sample": 234449,
+      "stream_start_s": 5.6290625,
+      "stream_end_s": 14.6530625,
+      "duration_s": 9.024,
+      "src_wav": "C:\\Users\\Simon.Wenchel\\Code\\buffering\\data\\raw\\covost2_en_de\\audio_wav16k\\common_voice_en_19721138.wav",
+      "src_wav_name": "common_voice_en_19721138.wav",
+      "src_ref": "Such religions, however, do maintain some appeal to a less exclusivist audience.",
+      "tgt_ref": "Jedoch sprechen solche Religionen ein weniger exklusives Publikum an."
+    },
+    {
+      "kind": "silence",
+      "stream_start_sample": 234449,
+      "stream_end_sample": 239790,
+      "stream_start_s": 14.6530625,
+      "stream_end_s": 14.986875,
+      "duration_s": 0.3338125
+    },
+    {
+      "kind": "utt",
+      "stream_start_sample": 239790,
+      "stream_end_sample": 320430,
+      "stream_start_s": 14.986875,
+      "stream_end_s": 20.026875,
+      "duration_s": 5.04,
+      "src_wav": "C:\\Users\\Simon.Wenchel\\Code\\buffering\\data\\raw\\covost2_en_de\\audio_wav16k\\common_voice_en_19979625.wav",
+      "src_wav_name": "common_voice_en_19979625.wav",
+      "src_ref": "See also: Baraka and Barakah.",
+      "tgt_ref": "Siehe auch Baraka und Barakah."
+    },
+    {
+      "kind": "silence",
+      "stream_start_sample": 320430,
+      "stream_end_sample": 322281,
+      "stream_start_s": 20.026875,
+      "stream_end_s": 20.1425625,
+      "duration_s": 0.1156875
+    },
+    {
+      "kind": "utt",
+      "stream_start_sample": 322281,
+      "stream_end_sample": 418665,
+      "stream_start_s": 20.1425625,
+      "stream_end_s": 26.1665625,
+      "duration_s": 6.024,
+      "src_wav": "C:\\Users\\Simon.Wenchel\\Code\\buffering\\data\\raw\\covost2_en_de\\audio_wav16k\\common_voice_en_18407354.wav",
+      "src_wav_name": "common_voice_en_18407354.wav",
+      "src_ref": "During his long career, he received many honours and awards.",
+      "tgt_ref": "Im Laufe seiner langen Karriere erhielt er zahlreiche Ehrungen und Auszeichnungen."
+    },
+    {
+      "kind": "silence",
+      "stream_start_sample": 418665,
+      "stream_end_sample": 421187,
+      "stream_start_s": 26.1665625,
+      "stream_end_s": 26.3241875,
+      "duration_s": 0.157625
+    },
+    {
+      "kind": "utt",
+      "stream_start_sample": 421187,
+      "stream_end_sample": 532163,
+      "stream_start_s": 26.3241875,
+      "stream_end_s": 33.2601875,
+      "duration_s": 6.936,
+      "src_wav": "C:\\Users\\Simon.Wenchel\\Code\\buffering\\data\\raw\\covost2_en_de\\audio_wav16k\\common_voice_en_19636264.wav",
+      "src_wav_name": "common_voice_en_19636264.wav",
+      "src_ref": "Mirsky declared it a piece of sheer play, almost sheer nonsense.",
+      "tgt_ref": "Mirsky erklärte es zu einem seichten Stück, beinahe reinem Unsinn."
+    },
+    {
+      "kind": "silence",
+      "stream_start_sample": 532163,
+      "stream_end_sample": 539029,
+      "stream_start_s": 33.2601875,
+      "stream_end_s": 33.6893125,
+      "duration_s": 0.429125
+    },
+    {
+      "kind": "utt",
+      "stream_start_sample": 539029,
+      "stream_end_sample": 676885,
+      "stream_start_s": 33.6893125,
+      "stream_end_s": 42.3053125,
+      "duration_s": 8.616,
+      "src_wav": "C:\\Users\\Simon.Wenchel\\Code\\buffering\\data\\raw\\covost2_en_de\\audio_wav16k\\common_voice_en_19663881.wav",
+      "src_wav_name": "common_voice_en_19663881.wav",
+      "src_ref": "The voiced cut scenes featuring Gene Okerlund from Superstars returned as well.",
+      "tgt_ref": "Die stimmlich gekürzten Szenen mit Gene Okerlund aus Superstars waren auch wieder da."
+    },
+    {
+      "kind": "silence",
+      "stream_start_sample": 676885,
+      "stream_end_sample": 679976,
+      "stream_start_s": 42.3053125,
+      "stream_end_s": 42.4985,
+      "duration_s": 0.1931875
+    },
+    {
+      "kind": "utt",
+      "stream_start_sample": 679976,
+      "stream_end_sample": 805928,
+      "stream_start_s": 42.4985,
+      "stream_end_s": 50.3705,
+      "duration_s": 7.872,
+      "src_wav": "C:\\Users\\Simon.Wenchel\\Code\\buffering\\data\\raw\\covost2_en_de\\audio_wav16k\\common_voice_en_19955413.wav",
+      "src_wav_name": "common_voice_en_19955413.wav",
+      "src_ref": "These factors attract cells involved in the proliferation stage of healing to the area.",
+      "tgt_ref": "Diese Faktoren locken Zellen, die an der Proliferationsphase der Heilung beteiligt sind, in den Bereich."
+    },
+    {
+      "kind": "silence",
+      "stream_start_sample": 805928,
+      "stream_end_sample": 808646,
+      "stream_start_s": 50.3705,
+      "stream_end_s": 50.540375,
+      "duration_s": 0.169875
+    },
+    {
+      "kind": "utt",
+      "stream_start_sample": 808646,
+      "stream_end_sample": 903110,
+      "stream_start_s": 50.540375,
+      "stream_end_s": 56.444375,
+      "duration_s": 5.904,
+      "src_wav": "C:\\Users\\Simon.Wenchel\\Code\\buffering\\data\\raw\\covost2_en_de\\audio_wav16k\\common_voice_en_19731891.wav",
+      "src_wav_name": "common_voice_en_19731891.wav",
+      "src_ref": "Members of the genus include the buttercups, spearworts, and water crowfoots.",
+      "tgt_ref": "Zu dieser Gattung gehören auch Butterblumen, das Scharbockskraut und der Hahnenfuß."
+    },
+    {
+      "kind": "silence",
+      "stream_start_sample": 903110,
+      "stream_end_sample": 909404,
+      "stream_start_s": 56.444375,
+      "stream_end_s": 56.83775,
+      "duration_s": 0.393375
+    },
+    {
+      "kind": "utt",
+      "stream_start_sample": 909404,
+      "stream_end_sample": 1038428,
+      "stream_start_s": 56.83775,
+      "stream_end_s": 64.90175,
+      "duration_s": 8.064,
+      "src_wav": "C:\\Users\\Simon.Wenchel\\Code\\buffering\\data\\raw\\covost2_en_de\\audio_wav16k\\common_voice_en_9541911.wav",
+      "src_wav_name": "common_voice_en_9541911.wav",
+      "src_ref": "Salim moved from India to the Netherlands.",
+      "tgt_ref": "Salim ist von Indien in die Niederlande gezogen."
+    }
+  ],
+  "stream_wav": "C:\\Users\\Simon.Wenchel\\Code\\buffering\\data\\streams\\stream_00_60s.wav",
+  "stream_json": "C:\\Users\\Simon.Wenchel\\Code\\buffering\\data\\streams\\stream_00_60s.json"
+}

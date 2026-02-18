@@ -73,7 +73,9 @@ logs/
 # Local data / model artifacts
 model_cache/
 data/raw/
-data/stream/
+data/stream/**
+!data/stream/**/*.wav
+!data/stream/**/*.json
 cv-corpus-24.0-2025-12-05-ar.tar.gz
 cv-corpus-24.0-2025-12-05-de.tar.gz
 cv-corpus-24.0-2025-12-05-fa.tar.gz

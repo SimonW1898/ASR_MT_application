@@ -1,0 +1,110 @@
+{
+  "schema": "long_stream_v1",
+  "sr": 16000,
+  "dtype": "float32",
+  "seed": 42,
+  "target_duration_s": 25.745,
+  "min_gap_s": 0.2,
+  "max_gap_s": 0.6,
+  "actual_duration_s": 25.745,
+  "num_segments": 9,
+  "num_utt_segments": 5,
+  "num_silence_segments": 4,
+  "input_files_dir_id": "8314d34ebb2428509b59a38c9b27d267d7b12ed6",
+  "segments": [
+    {
+      "kind": "utt",
+      "stream_start_sample": 0,
+      "stream_end_sample": 124416,
+      "stream_start_s": 0.0,
+      "stream_end_s": 7.776,
+      "duration_s": 7.776,
+      "src_wav": "C:\\Users\\Simon.Wenchel\\Code\\application\\data\\raw\\cvss_st\\fa-en\\clips\\validation_common_voice_fa_19873480_000018.mp3",
+      "src_wav_name": "validation_common_voice_fa_19873480_000018.mp3",
+      "src_ref": "من کمی بیشتر سیب زمینی سرخ کرده می خواهم.",
+      "tgt_ref": "i need to have more potato chips"
+    },
+    {
+      "kind": "silence",
+      "stream_start_sample": 124416,
+      "stream_end_sample": 131708,
+      "stream_start_s": 7.776,
+      "stream_end_s": 8.23175,
+      "duration_s": 0.45575
+    },
+    {
+      "kind": "utt",
+      "stream_start_sample": 131708,
+      "stream_end_sample": 187004,
+      "stream_start_s": 8.23175,
+      "stream_end_s": 11.68775,
+      "duration_s": 3.456,
+      "src_wav": "C:\\Users\\Simon.Wenchel\\Code\\application\\data\\raw\\cvss_st\\fa-en\\clips\\validation_common_voice_fa_19264539_000003.mp3",
+      "src_wav_name": "validation_common_voice_fa_19264539_000003.mp3",
+      "src_ref": "باعث شد حالم بدتر بشه",
+      "tgt_ref": "it caused me to feel even worse"
+    },
+    {
+      "kind": "silence",
+      "stream_start_sample": 187004,
+      "stream_end_sample": 190364,
+      "stream_start_s": 11.68775,
+      "stream_end_s": 11.89775,
+      "duration_s": 0.21
+    },
+    {
+      "kind": "utt",
+      "stream_start_sample": 190364,
+      "stream_end_sample": 261788,
+      "stream_start_s": 11.89775,
+      "stream_end_s": 16.36175,
+      "duration_s": 4.464,
+      "src_wav": "C:\\Users\\Simon.Wenchel\\Code\\application\\data\\raw\\cvss_st\\fa-en\\clips\\test_common_voice_fa_18615261_000014.mp3",
+      "src_wav_name": "test_common_voice_fa_18615261_000014.mp3",
+      "src_ref": "یک ضربه شمشیر سینهاش را سوراخ کرده بود",
+      "tgt_ref": "an impact of sword had pierced his chest"
+    },
+    {
+      "kind": "silence",
+      "stream_start_sample": 261788,
+      "stream_end_sample": 266748,
+      "stream_start_s": 16.36175,
+      "stream_end_s": 16.67175,
+      "duration_s": 0.31
+    },
+    {
+      "kind": "utt",
+      "stream_start_sample": 266748,
+      "stream_end_sample": 340092,
+      "stream_start_s": 16.67175,
+      "stream_end_s": 21.25575,
+      "duration_s": 4.584,
+      "src_wav": "C:\\Users\\Simon.Wenchel\\Code\\application\\data\\raw\\cvss_st\\fa-en\\clips\\train_common_voice_fa_19317363_000011.mp3",
+      "src_wav_name": "train_common_voice_fa_19317363_000011.mp3",
+      "src_ref": "امکان دارد یک چراغ قوه به من قرض بدهید؟",
+      "tgt_ref": "can you possibly lend me a flashlight"
+    },
+    {
+      "kind": "silence",
+      "stream_start_sample": 340092,
+      "stream_end_sample": 344720,
+      "stream_start_s": 21.25575,
+      "stream_end_s": 21.545,
+      "duration_s": 0.28925
+    },
+    {
+      "kind": "utt",
+      "stream_start_sample": 344720,
+      "stream_end_sample": 411920,
+      "stream_start_s": 21.545,
+      "stream_end_s": 25.745,
+      "duration_s": 4.2,
+      "src_wav": "C:\\Users\\Simon.Wenchel\\Code\\application\\data\\raw\\cvss_st\\fa-en\\clips\\train_common_voice_fa_19559723_000016.mp3",
+      "src_wav_name": "train_common_voice_fa_19559723_000016.mp3",
+      "src_ref": "چقدر طول می کشد به اوساکا برسد؟",
+      "tgt_ref": "how long will it take to get to osaka"
+    }
+  ],
+  "stream_wav": "C:\\Users\\Simon.Wenchel\\Code\\application\\data\\stream\\fa-en\\stream_00_5utt.wav",
+  "stream_json": "C:\\Users\\Simon.Wenchel\\Code\\application\\data\\stream\\fa-en\\stream_00_5utt.json"
+}

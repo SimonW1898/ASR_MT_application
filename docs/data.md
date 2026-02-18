@@ -8,7 +8,7 @@ Minimal CVSS + Common Voice workflow for this project.
 
 Output root:
 
-- `application/data/raw/cvss_st/<src>-en/`
+- `application/data/raw/cvss_st/<src>-<tgt>/`
   - `clips/`
   - `metadata/train.jsonl`
   - `metadata/validation.jsonl`
@@ -24,9 +24,9 @@ Each JSONL row contains:
 - `client_id`, `up_votes`, `down_votes`, `age`, `gender`, `accent`, `segment`
 
 ## Data sources
-
-- Source audio + transcript: Mozilla Common Voice (manual download)
-- Target translation text: Hugging Face `google/cvss`
+Important for using Data is that the licensing terms of the data are compatible with your intended use. Always review the licenses of the datasets you plan to use. Licenses may have a non commercial clause, which makes them incompatible with commercial use. Only permissible licences are used for the data and models in this repository.
+- Source audio + transcript: Mozilla Common Voice [Manual Download](https://commonvoice.mozilla.org/en/datasets) (need to register for access) (License: CC0-1.0)
+- Target translation text: [Hugging Face](https://huggingface.co/datasets/google/cvss) `google/cvss` (Older CoVosT version but contains target translations, which is missing for Mozilla Common Voice. License: CC BY 4.0)
 
 Matching key:
 
@@ -59,5 +59,7 @@ Optional checks:
 - Build proceeds per language and only writes data when matched samples >= `--min_matches`.
 - At least one language meeting threshold is sufficient for a successful run.
 - Clips are hardlinked when possible, with copy fallback.
+- Matching takes very long time, because the datasets are very large, so it's recommended to use existing data in zip file or on Campus drive.
 
+[Next: Module Reference](modules.md)
 [Back to Docs Index](index.md)

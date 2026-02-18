@@ -1,0 +1,110 @@
+{
+  "schema": "long_stream_v1",
+  "sr": 16000,
+  "dtype": "float32",
+  "seed": 42,
+  "target_duration_s": 27.161,
+  "min_gap_s": 0.2,
+  "max_gap_s": 0.6,
+  "actual_duration_s": 27.161,
+  "num_segments": 9,
+  "num_utt_segments": 5,
+  "num_silence_segments": 4,
+  "input_files_dir_id": "342875d3d2deb09273bfbfb1a8cc154314bd14cb",
+  "segments": [
+    {
+      "kind": "utt",
+      "stream_start_sample": 0,
+      "stream_end_sample": 64896,
+      "stream_start_s": 0.0,
+      "stream_end_s": 4.056,
+      "duration_s": 4.056,
+      "src_wav": "C:\\Users\\Simon.Wenchel\\Code\\application\\data\\raw\\cvss_st\\ja-en\\clips\\train_common_voice_ja_20101953_000009.mp3",
+      "src_wav_name": "train_common_voice_ja_20101953_000009.mp3",
+      "src_ref": "松井さんは白い服を着ています。",
+      "tgt_ref": "matsui is wearing white clothes"
+    },
+    {
+      "kind": "silence",
+      "stream_start_sample": 64896,
+      "stream_end_sample": 72188,
+      "stream_start_s": 4.056,
+      "stream_end_s": 4.51175,
+      "duration_s": 0.45575
+    },
+    {
+      "kind": "utt",
+      "stream_start_sample": 72188,
+      "stream_end_sample": 155900,
+      "stream_start_s": 4.51175,
+      "stream_end_s": 9.74375,
+      "duration_s": 5.232,
+      "src_wav": "C:\\Users\\Simon.Wenchel\\Code\\application\\data\\raw\\cvss_st\\ja-en\\clips\\train_common_voice_ja_20074582_000003.mp3",
+      "src_wav_name": "train_common_voice_ja_20074582_000003.mp3",
+      "src_ref": "スマートフォンからフィーチャーフォンまでマルチデバイスに対応",
+      "tgt_ref": "supports multiple devices from smart phones to feature phones"
+    },
+    {
+      "kind": "silence",
+      "stream_start_sample": 155900,
+      "stream_end_sample": 159260,
+      "stream_start_s": 9.74375,
+      "stream_end_s": 9.95375,
+      "duration_s": 0.21
+    },
+    {
+      "kind": "utt",
+      "stream_start_sample": 159260,
+      "stream_end_sample": 232604,
+      "stream_start_s": 9.95375,
+      "stream_end_s": 14.53775,
+      "duration_s": 4.584,
+      "src_wav": "C:\\Users\\Simon.Wenchel\\Code\\application\\data\\raw\\cvss_st\\ja-en\\clips\\train_common_voice_ja_20072900_000010.mp3",
+      "src_wav_name": "train_common_voice_ja_20072900_000010.mp3",
+      "src_ref": "日本では冬雪が降ります。",
+      "tgt_ref": "in japan it snows in the winter"
+    },
+    {
+      "kind": "silence",
+      "stream_start_sample": 232604,
+      "stream_end_sample": 237564,
+      "stream_start_s": 14.53775,
+      "stream_end_s": 14.84775,
+      "duration_s": 0.31
+    },
+    {
+      "kind": "utt",
+      "stream_start_sample": 237564,
+      "stream_end_sample": 350844,
+      "stream_start_s": 14.84775,
+      "stream_end_s": 21.92775,
+      "duration_s": 7.08,
+      "src_wav": "C:\\Users\\Simon.Wenchel\\Code\\application\\data\\raw\\cvss_st\\ja-en\\clips\\test_common_voice_ja_20198568_000016.mp3",
+      "src_wav_name": "test_common_voice_ja_20198568_000016.mp3",
+      "src_ref": "私が一番古い友達というので、碑文に、一筆すすめられた。",
+      "tgt_ref": "as their oldest friend i was recommended to write a few lines for their epitaph"
+    },
+    {
+      "kind": "silence",
+      "stream_start_sample": 350844,
+      "stream_end_sample": 355472,
+      "stream_start_s": 21.92775,
+      "stream_end_s": 22.217,
+      "duration_s": 0.28925
+    },
+    {
+      "kind": "utt",
+      "stream_start_sample": 355472,
+      "stream_end_sample": 434576,
+      "stream_start_s": 22.217,
+      "stream_end_s": 27.161,
+      "duration_s": 4.944,
+      "src_wav": "C:\\Users\\Simon.Wenchel\\Code\\application\\data\\raw\\cvss_st\\ja-en\\clips\\test_common_voice_ja_20068361_000005.mp3",
+      "src_wav_name": "test_common_voice_ja_20068361_000005.mp3",
+      "src_ref": "わたしはあした大使館へ行きます。",
+      "tgt_ref": "i will go to the embassy tomorrow"
+    }
+  ],
+  "stream_wav": "C:\\Users\\Simon.Wenchel\\Code\\application\\data\\stream\\ja-en\\stream_00_5utt.wav",
+  "stream_json": "C:\\Users\\Simon.Wenchel\\Code\\application\\data\\stream\\ja-en\\stream_00_5utt.json"
+}

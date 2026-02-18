@@ -59,24 +59,23 @@ Stop demo:
 3. Choose source language.
 4. Choose target language.
 5. Pick ASR and MT models from filtered dropdowns.
-6. Press **Start** and confirm immediate output reset + READY status.
+6. Press **Start** and confirm READY status.
 7. Stop with **Stop** and validate final session status.
 
 ## Suggested validation cases
 
-- **WAV sanity (stable)**
+- **WAV**
 	- `ar -> en` with Arabic demo WAV
 	- `fa -> en` with Persian/Farsi demo WAV
 	- `ja -> en` with Japanese demo WAV
-	- Expect: non-empty ASR, non-empty MT, no fallback-to-dummy logs
 
-- **Microphone sanity (live)**
-	- Speak 2-3 short sentences with pauses
-	- Expect: segmentation triggers on pauses, no endless repeated output
+- **Microphone**
+	- Speak few sentences after READY status
 
 - **Offline cache sanity**
 	- Keep `runtime.offline: true`
 	- Restart demo and rerun one pair
 	- Expect: session initializes without new online downloads
 
+[Next: gRPC Demo Notes](grpc_demo.md) 
 [Back to Docs Index](index.md)

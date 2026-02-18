@@ -2,11 +2,11 @@
 
 # Architecture
 
-This demo keeps a strict client/server split and reuses class-based `streaming` modules where possible.
+This demo keeps a strict client/server split and reuses class-based `streaming` modules.
 
 ## System boundary
 
-Client (GUI + audio capture) → gRPC stream → Server (policy + preprocess + ASR + merge + MT + logging) → gRPC stream → Client display.
+Client (GUI + audio capture/input) → gRPC stream → Server (policy + preprocess + ASR + merge + MT + logging) → gRPC stream → Client display.
 
 ## Responsibilities
 
@@ -15,6 +15,7 @@ Client (GUI + audio capture) → gRPC stream → Server (policy + preprocess + A
 - Owns PySide6 UI state and controls
 - Owns source capture (microphone via FFmpeg, or WAV streaming)
 - Owns transport framing and gRPC session lifecycle
+- Modifies settings setup for a user session and sends it with first message as config
 - Renders merged ASR, merged MT, and latency metrics
 
 ### Server (`grpc_demo/server`)
@@ -51,4 +52,5 @@ Server processing sequence:
 - Streaming audio follows `READY`
 - `STOP` performs graceful flush/drain before close
 
+[Next: Troubleshooting](troubleshooting.md)
 [Back to Docs Index](index.md)

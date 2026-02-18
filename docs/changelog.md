@@ -1,6 +1,10 @@
 [Back to Docs Index](index.md)
 
 # Changelog / Release Notes
+## Current Goals:
+- Include good preprocessing for noise reduction and better speach extraction
+
+
 
 ## 2026-02-16
 
@@ -55,5 +59,7 @@
 - Strengthen explicit offline-ready inference verification after cache prep
 - Freeze dependency set for distribution readiness
 - Keep docs synchronized with script behavior as launch flow evolves
+
+[Next: Model/Data Licensing](model_data_licensing.md)
 
 [Back to Docs Index](index.md)

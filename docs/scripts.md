@@ -1,6 +1,6 @@
 [Back to Docs Index](index.md)
 
-# Script Reference
+# PowerShell Scripts Reference
 
 Runtime and tooling script reference for this repository.
 
@@ -62,7 +62,7 @@ Preflight checks for:
 ./prepare_model_cache.ps1
 ```
 
-## Tooling data root
+## Tooling data root WARNING: Just do this when CoVoST downloaded and need new evaluation Data
 
 Tooling scripts under `application/scripts/` resolve paths from `__file__` and write to:
 
@@ -89,6 +89,7 @@ Notes:
 ## Separate eval environment (recommended)
 
 Use a dedicated eval venv for data/eval tooling to avoid mixing with runtime dependencies.
+There are problems with `protobuf` package, that is needed for grpc and some evaluation tools, such as `unbabel-comet`.
 
 ```powershell
 py -3.11 -m venv venv_eval
@@ -102,4 +103,5 @@ Notes:
 - `requirements-eval.txt` intentionally excludes demo-runtime `grpcio` dependencies.
 - Keep runtime flow on `venv311` and eval/data flow on `venv_eval` (or `venv-eval`).
 
+[Next: Data Guidelines](data.md)
 [Back to Docs Index](index.md)

@@ -7,9 +7,10 @@ Goal: clone repo, prepare local model cache, and run demo with minimal manual st
 ## 1) Clone and open
 
 ```powershell
-git clone <your-repo-url>
+git clone https://github.com/SimonW1898/ASR_MT_application.git
 cd application
 ```
+Or get it from a zip file.
 
 ## 2) One-time script permission (PowerShell)
 
@@ -43,6 +44,32 @@ Expected checks include:
 - FFmpeg on `PATH`
 - Config file presence
 - Bind status for port `50051`
+### 4.1) Install FFmpeg (if missing)
+```powershell
+winget install --id Gyan.FFmpeg -e
+ffmpeg -version
+```
+
+If `ffmpeg` is not recognized, restart your terminal or add the FFmpeg `bin` folder to your system `PATH`, then verify again with:
+
+```powershell
+ffmpeg -version
+```
+
+### Install FFmpeg via Installer (Windows)
+
+```text
+1. Download FFmpeg (Windows build) from: https://www.gyan.dev/ffmpeg/builds/
+2. Extract the ZIP to: C:\ffmpeg
+3. Add C:\ffmpeg\bin to your System PATH (System → Advanced → Environment Variables → Path → New)
+4. Restart PowerShell
+5. Verify installation:
+```
+
+```powershell
+ffmpeg -version
+```
+
 
 ## 5) Prepare local model cache (recommended)
 
@@ -110,4 +137,5 @@ If `50051` is occupied:
 .\venv311\Scripts\python.exe -m grpc_demo.client.app --config grpc_demo/configs/demo.yaml
 ```
 
+[Next: to Runtime Guide](runtime.md) 
 [Back to Docs Index](index.md)

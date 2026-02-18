@@ -1,0 +1,110 @@
+{
+  "schema": "long_stream_v1",
+  "sr": 16000,
+  "dtype": "float32",
+  "seed": 42,
+  "target_duration_s": 22.721,
+  "min_gap_s": 0.2,
+  "max_gap_s": 0.6,
+  "actual_duration_s": 22.721,
+  "num_segments": 9,
+  "num_utt_segments": 5,
+  "num_silence_segments": 4,
+  "input_files_dir_id": "3f3761884a7d92e4d32232aa9187a8489e472d7c",
+  "segments": [
+    {
+      "kind": "utt",
+      "stream_start_sample": 0,
+      "stream_end_sample": 67584,
+      "stream_start_s": 0.0,
+      "stream_end_s": 4.224,
+      "duration_s": 4.224,
+      "src_wav": "C:\\Users\\Simon.Wenchel\\Code\\application\\data\\raw\\cvss_st\\ar-en\\clips\\validation_common_voice_ar_19239000_000018.mp3",
+      "src_wav_name": "validation_common_voice_ar_19239000_000018.mp3",
+      "src_ref": "هل تعرف البلدة التي ولد فيها ؟",
+      "tgt_ref": "do you know which town he was born in"
+    },
+    {
+      "kind": "silence",
+      "stream_start_sample": 67584,
+      "stream_end_sample": 74876,
+      "stream_start_s": 4.224,
+      "stream_end_s": 4.67975,
+      "duration_s": 0.45575
+    },
+    {
+      "kind": "utt",
+      "stream_start_sample": 74876,
+      "stream_end_sample": 168572,
+      "stream_start_s": 4.67975,
+      "stream_end_s": 10.53575,
+      "duration_s": 5.856,
+      "src_wav": "C:\\Users\\Simon.Wenchel\\Code\\application\\data\\raw\\cvss_st\\ar-en\\clips\\validation_common_voice_ar_19191435_000003.mp3",
+      "src_wav_name": "validation_common_voice_ar_19191435_000003.mp3",
+      "src_ref": "بعد شراء تلك الأحذية انتهى بي المطاف مع السحب على المكشوف",
+      "tgt_ref": "after buying those shoes i ended up with an overdraft"
+    },
+    {
+      "kind": "silence",
+      "stream_start_sample": 168572,
+      "stream_end_sample": 171932,
+      "stream_start_s": 10.53575,
+      "stream_end_s": 10.74575,
+      "duration_s": 0.21
+    },
+    {
+      "kind": "utt",
+      "stream_start_sample": 171932,
+      "stream_end_sample": 228380,
+      "stream_start_s": 10.74575,
+      "stream_end_s": 14.27375,
+      "duration_s": 3.528,
+      "src_wav": "C:\\Users\\Simon.Wenchel\\Code\\application\\data\\raw\\cvss_st\\ar-en\\clips\\test_common_voice_ar_19077462_000014.mp3",
+      "src_wav_name": "test_common_voice_ar_19077462_000014.mp3",
+      "src_ref": "شعرها جاف.",
+      "tgt_ref": "her hair is dry"
+    },
+    {
+      "kind": "silence",
+      "stream_start_sample": 228380,
+      "stream_end_sample": 233340,
+      "stream_start_s": 14.27375,
+      "stream_end_s": 14.58375,
+      "duration_s": 0.31
+    },
+    {
+      "kind": "utt",
+      "stream_start_sample": 233340,
+      "stream_end_sample": 297084,
+      "stream_start_s": 14.58375,
+      "stream_end_s": 18.56775,
+      "duration_s": 3.984,
+      "src_wav": "C:\\Users\\Simon.Wenchel\\Code\\application\\data\\raw\\cvss_st\\ar-en\\clips\\train_common_voice_ar_19227720_000011.mp3",
+      "src_wav_name": "train_common_voice_ar_19227720_000011.mp3",
+      "src_ref": "ما زالت تمطر منذ ليلة البارحة.",
+      "tgt_ref": "it has been raining since last night"
+    },
+    {
+      "kind": "silence",
+      "stream_start_sample": 297084,
+      "stream_end_sample": 301712,
+      "stream_start_s": 18.56775,
+      "stream_end_s": 18.857,
+      "duration_s": 0.28925
+    },
+    {
+      "kind": "utt",
+      "stream_start_sample": 301712,
+      "stream_end_sample": 363536,
+      "stream_start_s": 18.857,
+      "stream_end_s": 22.721,
+      "duration_s": 3.864,
+      "src_wav": "C:\\Users\\Simon.Wenchel\\Code\\application\\data\\raw\\cvss_st\\ar-en\\clips\\train_common_voice_ar_19257022_000016.mp3",
+      "src_wav_name": "train_common_voice_ar_19257022_000016.mp3",
+      "src_ref": "تعزف أمي على البيانو بمهارة.",
+      "tgt_ref": "my mom plays the piano ably"
+    }
+  ],
+  "stream_wav": "C:\\Users\\Simon.Wenchel\\Code\\application\\data\\stream\\ar-en\\stream_00_5utt.wav",
+  "stream_json": "C:\\Users\\Simon.Wenchel\\Code\\application\\data\\stream\\ar-en\\stream_00_5utt.json"
+}

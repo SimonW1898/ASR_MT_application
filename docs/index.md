@@ -10,11 +10,6 @@ Stable documentation pages for onboarding, operation, and maintenance.
 - Folder-level `README` files inside subdirectories are intentionally removed to avoid drift.
 - Keep only repository-level entry docs (`README.md`) plus pages linked below.
 
-## Quick Start (one command)
-
-- [Setup (fresh machine)](setup_fresh_machine.md)
-- [Runtime Guide](runtime.md)
-
 ## Setup (fresh machine)
 
 - [Setup (fresh machine)](setup_fresh_machine.md)
@@ -23,7 +18,6 @@ Stable documentation pages for onboarding, operation, and maintenance.
 
 - [Runtime Guide](runtime.md)
 - [gRPC Demo Notes](grpc_demo.md)
-- [Troubleshooting](troubleshooting.md)
 
 ## Configuration
 
@@ -35,7 +29,7 @@ Stable documentation pages for onboarding, operation, and maintenance.
 
 ## Script Reference
 
-- [Script Reference](scripts.md)
+- [PowerShell Scripts Reference](scripts.md)
 
 ## Data
 
@@ -57,5 +51,9 @@ Stable documentation pages for onboarding, operation, and maintenance.
 ## Changelog/Release Notes
 
 - [Changelog / Release Notes](changelog.md)
+
+## Model/Data Licensing
+
+- [Model/Data Licensing](model_data_licensing.md)
 
 [Back to Docs Index](index.md)

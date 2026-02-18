@@ -21,8 +21,8 @@ Primary runtime configuration file:
 
 - `policy.type`: `vad`
 - `merge.enabled`: `false` (conservative default while tuning live microphone behavior)
-- Typical active multilingual demo pairs include `ar-en`, `ja-en`, and `fa-en`
-- Typical tested source languages: `de`, `ar`, `fa`, `ja`
+- Typical active multilingual demo pairs include `en-de`, `de-en`, `ar-en`, `ja-en`, and `fa-en`
+- Typical source languages: `de`, `en`, `ar`, `fa`, `ja`
 
 ## MT model note (Farsi)
 
@@ -57,6 +57,7 @@ Language availability in the GUI is driven by the cache plan plus YAML runtime s
 
 The GUI language and model dropdowns are built from `model_cache_plan.json`, so new pairs become selectable after plan update and cache warm-up.
 
-For WAV demos with visible references, place sidecar JSON next to the WAV (same base filename) and include `segments[].tgt_ref` (or `segments[].tgt_ref_<lang>` for language-specific references).
+<!-- For WAV demos with visible references, place sidecar JSON next to the WAV (same base filename) and include `segments[].tgt_ref` (or `segments[].tgt_ref_<lang>` for language-specific references). -->
 
+[Next: PowerShell Scripts Reference](scripts.md)
 [Back to Docs Index](index.md)
