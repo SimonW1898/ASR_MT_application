@@ -1,0 +1,45 @@
+# ------------------------
+# gRPC (protobuf 6.x line)
+# ------------------------
+grpcio==1.78.0
+grpcio-tools==1.78.0
+protobuf>=6.31.1,<7.0.0
+
+# ------------------------
+# Core utilities
+# ------------------------
+PyYAML==6.0.3
+numpy<2.0
+
+# ------------------------
+# GUI (Qt)
+# ------------------------
+PySide6==6.6.3
+PySide6-Addons==6.6.3
+PySide6-Essentials==6.6.3
+shiboken6==6.6.3
+
+# ------------------------
+# ASR / MT stack
+# ------------------------
+torch==2.2.2
+torchaudio==2.2.2
+transformers==4.44.2
+tokenizers>=0.15,<0.20
+huggingface-hub>=0.23,<1.0
+sentencepiece==0.2.1
+sacremoses==0.1.1
+
+# ------------------------
+# Evaluation (no COMET)
+# ------------------------
+evaluate==0.4.6
+datasets>=2.18,<3.0
+sacrebleu==2.6.0
+bert-score==0.3.13
+
+# ------------------------
+# Audio utilities
+# ------------------------
+scipy==1.11.4
+soundfile==0.13.1

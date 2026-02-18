@@ -1,0 +1,127 @@
+syntax = "proto3";
+
+package grpc_demo;
+
+service ASRMTService {
+  rpc StreamSession(stream ClientMessage) returns (stream ServerMessage);
+}
+
+message ClientMessage {
+  oneof payload {
+    SessionConfig config = 1;
+    AudioChunk audio = 2;
+    Control control = 3;
+  }
+}
+
+message SessionConfig {
+  AudioConfig audio = 1;
+  PolicyConfig policy = 2;
+  MergeConfig merge = 3;
+  MTConfig mt = 4;
+  ModelConfig models = 5;
+  RuntimeConfig runtime = 6;
+  InputMode input_mode = 7;
+}
+
+message AudioConfig {
+  int32 sample_rate = 1;
+  int32 transport_chunk_ms = 2;
+}
+
+message PolicyConfig {
+  string type = 1; // silence_terminated | vad | fixed_window
+  SilenceTerminatedConfig silence_terminated = 2;
+  VADConfig vad = 3;
+  FixedWindowConfig fixed_window = 4;
+}
+
+message SilenceTerminatedConfig {
+  int32 min_ms = 1;
+  int32 max_ms = 2;
+  int32 silence_ms = 3;
+  float threshold = 4;
+}
+
+message VADConfig {
+  int32 pre_ms = 1;
+  int32 post_ms = 2;
+  int32 min_ms = 3;
+  int32 silence_ms = 4;
+  int32 max_ms = 5;
+  float threshold = 6;
+}
+
+message FixedWindowConfig {
+  int32 win_ms = 1;
+}
+
+message MergeConfig {
+  bool enabled = 1;
+  int32 tail_tokens = 2;
+  int32 head_tokens = 3;
+  int32 min_match_tokens = 4;
+  int32 max_search_shift = 5;
+}
+
+message MTConfig {
+  string mode = 1; // segment | merged
+}
+
+message ModelConfig {
+  string asr_model_id = 1;
+  string mt_model_id = 2;
+  string asr_language = 3;
+}
+
+message RuntimeConfig {
+  string device = 1; // auto | cpu | cuda
+  bool offline = 2;
+  string cache_dir = 3;
+  string log_dir = 4;
+  string grpc_host = 5;
+  int32 grpc_port = 6;
+}
+
+message InputMode {
+  bool use_microphone = 1;
+  string wav_path = 2;
+  bool realtime_simulation = 3;
+  string device_hint = 4;
+}
+
+message AudioChunk {
+  bytes pcm16 = 1;
+  int64 t0 = 2;
+  int64 t1 = 3;
+  int64 frame_idx = 4;
+}
+
+message Control {
+  string action = 1; // STOP | FLUSH
+}
+
+message ServerMessage {
+  oneof payload {
+    Status status = 1;
+    SegmentResult segment = 2;
+  }
+}
+
+message Status {
+  string state = 1; // LOADING | READY | STOPPED | ERROR
+  string message = 2;
+}
+
+message SegmentResult {
+  int64 segment_id = 1;
+  string asr_chunk_text = 2;
+  string mt_chunk_text = 3;
+  string merged_asr = 4;
+  string merged_mt = 5;
+  string reason = 6;
+  double audio_time_s = 7;
+  double queue_latency_ms = 8;
+  double process_time_ms = 9;
+  double e2e_ms = 10;
+}

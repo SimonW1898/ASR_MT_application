@@ -1,0 +1,69 @@
+{
+  "asr_models": [
+    {
+      "name": "Whisper Small",
+      "model_id": "openai/whisper-small",
+      "asr_language": "en"
+    },
+    {
+      "name": "Whisper Medium",
+      "model_id": "openai/whisper-medium",
+      "asr_language": "en"
+    },
+    {
+      "name": "Whisper Large",
+      "model_id": "openai/whisper-large",
+      "asr_language": "en"
+    },
+    {
+      "name": "Whisper Small (Arabic)",
+      "model_id": "openai/whisper-small",
+      "asr_language": "ar"
+    },
+    {
+      "name": "Whisper Small (Farsi)",
+      "model_id": "openai/whisper-small",
+      "asr_language": "fa"
+    },
+    {
+      "name": "Whisper Small (Japanese)",
+      "model_id": "openai/whisper-small",
+      "asr_language": "ja"
+    }
+  ],
+  "mt_models": [
+    {
+      "pair": "en-de",
+      "model_id": "Helsinki-NLP/opus-mt-en-de"
+    },
+    {
+      "pair": "de-en",
+      "model_id": "Helsinki-NLP/opus-mt-de-en"
+    },
+    {
+      "pair": "de-fr",
+      "model_id": "Helsinki-NLP/opus-mt-de-fr"
+    },
+    {
+      "pair": "en-fr",
+      "model_id": "Helsinki-NLP/opus-mt-en-fr"
+    },
+    {
+      "pair": "fr-en",
+      "model_id": "Helsinki-NLP/opus-mt-fr-en"
+    },
+    {
+      "pair": "ar-en",
+      "model_id": "Helsinki-NLP/opus-mt-ar-en"
+    },
+    {
+      "pair": "ja-en",
+      "model_id": "Helsinki-NLP/opus-mt-ja-en"
+    },
+    {
+      "pair": "fa-en",
+      "name": "M2M100 FA-EN",
+      "model_id": "facebook/m2m100_418M"
+    }
+  ]
+}
